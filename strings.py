@@ -28,3 +28,27 @@ text= "Afzal"
 print(text.startswith("A"))  #startswith() method returns True if the string starts with the specified value.
 
 print(text.endswith("l"))  #endswith() method returns True if the string ends with the specified value.
+
+text = "  Machine Learning with Python  "
+
+# 1. String length
+print(len(text))
+
+# 2. Indexing
+print(text[0])
+
+# 3. Slicing
+print(text[0:7])
+
+# 4. Membership
+print("Python" in text)
+
+# 5. String formatting
+name = "Afzal"
+score = 95
+print(f"{name} scored {score}")
+
+''' 
+One important concept: strings are immutable. 
+Methods such as replace() and lower() return new strings rather than modifying the original string.
+'''
