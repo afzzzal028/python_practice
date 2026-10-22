@@ -46,3 +46,9 @@ a, *b, c = (1, 2, 3, 4, 5) #unpacking with * operator
 print(a) #prints 1
 print(b) #prints [2, 3, 4]
 print(c) #prints 5
+
+t = (1, 2, 2, 3, 4)
+
+print(len(t))       # Number of elements
+print(t.count(2))   # Count occurrences
+print(t.index(3))   # Index of first occurrence
