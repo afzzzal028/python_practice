@@ -105,3 +105,13 @@ print(data[::2])
 # Enumerate: index and value
 for i, value in enumerate(data, start=1):
     print(i, value)
+
+
+data = [1, 2, 3, 4, 5]
+
+squares = [x**2 for x in data]
+evens = [x for x in data if x % 2 == 0]
+labels = ['Even' if x % 2 == 0 else 'Odd' for x in data]
+print(squares)
+print(evens)
+print(labels)
