@@ -55,3 +55,53 @@ print(a[0][0]) #accessing an element in a nested list
 a = [1, 2, 3, 4, 5]
 res = [x**2 for x in a] #creating a new list with the square of each element in the original list
 print(res)
+
+res= [x for x in a if x%2==0] #creating a new list with only the even elements from the original list
+print(res)
+
+a = [9, 10, 11, 12, 13, 18]
+res= [x for x in a if x>10] #creating a new list with only the elements greater than 10 from the original list
+print(res)
+
+a =[i for i in range(10)] #creating a new list with elements from 0 to 9
+print(a)
+
+c= [(x,y) for x in range(3) for y in range(3)] #creating a new list with tuples of all combinations of x and y from 0 to 2
+print(c)
+
+mat = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+res= [val for row in mat for val in row] #flattening a nested list into a single list
+print(res)
+
+
+data = [5, 2, 8, 1, 9, 2]
+
+# Length
+print(len(data))
+
+# Sorting
+print(sorted(data))
+data.sort()
+
+# Minimum, maximum, sum
+print(min(data))
+print(max(data))
+print(sum(data))
+
+# Membership testing
+print(8 in data)
+
+# Counting occurrences
+print(data.count(2))
+
+# Finding an element's index
+print(data.index(8))
+
+# Slicing
+print(data[1:4])
+print(data[:3])
+print(data[::2])
+
+# Enumerate: index and value
+for i, value in enumerate(data, start=1):
+    print(i, value)
