@@ -26,3 +26,5 @@ print(text.strip())  #strip() method removes any whitespace from the beginning o
 
 text= "Afzal"
 print(text.startswith("A"))  #startswith() method returns True if the string starts with the specified value.
+
+print(text.endswith("l"))  #endswith() method returns True if the string ends with the specified value.
