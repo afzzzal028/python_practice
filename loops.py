@@ -90,3 +90,42 @@ while i>=1:
     print() 
     i-=1
        
+"""Pyramid Pattern"""
+
+#single loop
+n=5
+for i in range(1, n+1):
+    print(" "* (n-i) + "*"* (2*i-1))
+
+
+#nested loop
+rows = 5
+
+for i in range(1, rows+1):
+
+    for j in range(rows-i):
+        print(" ", end=" ")
+
+    for k in range(2*i-1):
+        print("*", end=" ")
+
+    print()
+
+
+
+"""Number Pattern"""
+
+for i in range(1, 6):
+    for j in range(1, i+1):
+        print(j, end=" ")
+    print()
+
+#while loop
+i=1
+while i<=5:
+    j=1
+    while j<=i:
+        print(j, end=" ")
+        j+=1
+    print()
+    i+=1
