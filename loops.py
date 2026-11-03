@@ -194,3 +194,50 @@ for i in range(1,5):
 n=6
 for i in range(1, n+1):
     print(" "*(n-i) + "*"*(2*i-1))
+
+
+#Inverted Star Triangle
+
+rows=5
+for i in range(rows, 0, -1):
+    for j in range(1, i+1):
+        print("*", end=" ")
+    print()
+
+#Right Aligned Triangle
+
+rows=5
+for i in range(1, rows+1): #controls the whole rows
+    for j in range(rows-i):
+        print(" ", end= " ") #makes the spacing
+    for k in range(1, 1+i):
+        print("*", end = " ") #prints the stars
+    print()
+
+
+
+#Numbwer Pyramid
+rows=5
+for i in range(1, rows+1 ):
+    print(" "*(rows-i), end="") #for spacing
+    for j in range(1, i+1):
+        print(j, end=" ") #prints the numbers
+    print() #for new line
+
+#Diamond Pattern
+rows=5
+for i in range(1, rows+1):
+    print(" "*(rows-i)+ "*"*(2*i-1))
+for i in range(rows-1, 0, -1):
+    print(" "*(rows-i)+ "*"*(2*i-1))
+
+
+#Binary Number Pattern
+rows=5
+for i in range(1, rows+1):
+    for j in range(1, i+1):
+        if (i+j)%2==0:
+            print("1", end=" ")
+        else:
+            print("0", end=" ")
+    print()
