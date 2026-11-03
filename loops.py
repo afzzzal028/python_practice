@@ -122,10 +122,75 @@ for i in range(1, 6):
 
 #while loop
 i=1
-while i<=5:
+while i<6:
     j=1
     while j<=i:
         print(j, end=" ")
         j+=1
     print()
     i+=1
+
+
+"""Repeated Number Pattern"""
+
+for i in range(1, 6):
+    for j in range(1, i+1):
+        print(i, end=" ")
+    print()
+
+#inverted triangle pattern
+
+for i in range(5,0, -1):
+    for j in range(1, i+1):
+        print(i, end=" ")
+    print()
+
+for i in range(5,0, -1):
+    for j in range(1, i+1):
+        print(j, end=" ")
+    print()
+
+"""Floyds Triangle"""
+num = 1
+for i in range(1, 6):
+    for j in range(1, i+1):
+        print(num, end= " ")
+        num+=1
+    print()
+
+# Question 1. Print a triangle with 6 rows of stars.
+rows = 6
+for i in range(1, rows+1):
+    for j in range(1,i+1):
+        print("*", end=" ")
+    print()
+
+
+#Question 2. Print an inverted triangle of numbers: 1 2 3 4, then 1 2 3, etc.
+rows=4
+for i in range(rows, 0, -1):
+    for j in range(1, i+1):
+        print(j, end=" ")
+    print()
+
+#Question 3. Print a square of numbers from 1 to 4 in every row.
+rows=4
+for i in range(1, rows+1):
+    for j in range(1, rows+1):
+        print(j, end=" ")
+    print()
+
+#Question 4. Print this pattern: 1 / 2 3 / 4 5 6 / 7 8 9 10.
+
+num =1
+for i in range(1,5):
+    for j in range(1, i+1):
+        print(num, end=" ")
+        num+=1
+    print()
+
+#Question 5. Print a pyramid with 5 rows.
+
+n=6
+for i in range(1, n+1):
+    print(" "*(n-i) + "*"*(2*i-1))
