@@ -154,4 +154,5 @@ print(calculate(5,2))
 def student(name, age=20):
     print(f"{name}")
     print(f"{name}, {age}")
-student(name=)
+student("Afzal")
+student("Ali", 21)
