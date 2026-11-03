@@ -46,4 +46,51 @@ myFUn(10)
 def student(fname, lname):
     print(f"Hello, {fname} {lname}")
 student(fname="Afzal", lname= "Siddiqui")
-student(fname="Ariba", lname="Aslam")
+student(fname="Jack", lname="Reacher")
+
+#Positinal Argument- values are assigned to parameters based on their order in the function call.
+def nameAge(name, age):
+    print("Hi, I am", name)
+    print(f"I am {age} years old." )
+
+print("Case-1:")
+nameAge("Ali", 20)
+
+print("Case-2:")
+nameAge(20, "Ali")
+
+
+#Arbitrary Argument- allow functions to accept multiple values. This is done using two special symbols
+#*args- collects extra positional arguments as a tuple.
+# **kwargs- collects extra keyword arguments as a dictonary.
+
+def myFun(*args, **kwargs):
+    print("Non-keyword Argument")
+    for arg in args:
+        print(arg)
+
+    print("Keyword Argument")
+    for key, value in kwargs.items():
+        print(f"{key}=={value}")
+
+myFun("Hey", "Welcome", first="geeks", second= "for", last="Geeks")
+
+
+"""Nested Fucntions"""
+
+def f1():
+    s="I love sm1"
+    def f2():
+        print(s)
+    f2()
+f1()
+
+
+"""Return Statement"""
+
+#return [expression]
+
+def sq_value(num):
+    return num**2
+print(sq_value(4))
+print(sq_value(2))
