@@ -94,3 +94,64 @@ def sq_value(num):
     return num**2
 print(sq_value(4))
 print(sq_value(2))
+
+"""Pass by Reference and Pass by Value"""
+
+def myFun(x):
+    x[0]="strawberry" #can modify the list
+b=["apple", "kiwi", "mango"]
+myFun(b)
+print(b)
+
+"""
+b creates a list in memory.
+myFun(b) passes the list to the function.
+x now refers to the same list as b.
+x[0] = 20 modifies the first element of that original list.
+When you print b, the modification is visible.
+"""
+
+def myFun2(x):
+    x=20 # a didn't become 20
+
+a=10
+myFun2(a)
+print(a)
+
+"""
+
+a = 10 creates an integer object.
+myFun2(a) passes the value's object reference to the function.
+Initially, x refers to the same integer object as a.
+x = 20 makes x refer to a different integer object.
+a still refers to the original integer object, 10.
+
+"""
+
+
+
+
+""""Practice"""
+
+#Write a function called greet() that
+def person(name):
+    print(f"Hello, {name}")
+person("Afzal")
+
+#Return Statement
+
+def square(n):
+    return n**2
+print(square(5))
+
+#Multiple Argument
+
+def calculate(a, b):
+    return a+b, a-b, a*b
+print(calculate(5,2))
+
+#understanding arguments
+def student(name, age=20):
+    print(f"{name}")
+    print(f"{name}, {age}")
+student(name=)
