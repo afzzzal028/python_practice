@@ -269,10 +269,3 @@ for i in range(rows-1, 0, -1):
         print(j, end= " ")
     print()
 
-for i in range(1, 4):
-    for j in range(1, 4):
-        if i == 1 or j == 1:
-            print("*", end=" ")
-        else:
-            print(" ", end=" ")
-    print()

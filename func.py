@@ -156,3 +156,77 @@ def student(name, age=20):
     print(f"{name}, {age}")
 student("Afzal")
 student("Ali", 21)
+
+
+def add(a,b):
+    print(a+b)
+result=(add(10,20))
+print(result)
+
+def check_number(n):
+    if n>0:
+        return "Positive"
+    elif n==0:
+        return "Zero"
+    else:
+        return "Negative"
+print(check_number(5))
+
+
+def find_max(a, b, c):
+    max=a
+    max_num=[a, b, c]
+    for i in max_num:
+        if i>max:
+            max=i
+    
+    return max
+
+print(find_max(10, 25, 15))
+
+
+#factorial
+def factorial(n):
+    if n<0:
+        return "factorial not defined for negative"
+    elif n==1 or n==0:
+        return 1
+
+    factorial=1
+    for i in range(1, n+1):
+        result*=i
+    return result
+
+print(factorial(0))
+
+
+#count vowels
+
+def count_vowels(str):
+    vowles="aeiouAEIOU"
+    count=0
+    for char in str:
+        if char in vowles:
+            count+=1
+    return count
+print(count_vowels("Afzal Siddiqui"))
+
+
+def is_prime(n):
+    if n<=1:
+        return "Prime"
+    for i in range(2,n):
+        if n%i==0:
+            break
+        else:
+            return "Not a Prime"
+    return "Prime"
+print(is_prime(8))
+
+
+def reverse_string(str):
+    reversed_str=""
+    for ch in str:
+        reversed_str= ch + reversed_str
+    return reversed_str
+print(reverse_string("Python"))
