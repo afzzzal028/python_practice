@@ -322,3 +322,40 @@ def fibonacci_recursive(n):
         return n
     return fibonacci_recursive(n - 1) + fibonacci_recursive(n - 2)
 print(fibonacci_recursive(10))
+
+"""Args kwargs"""
+
+#finding largest
+
+def max(*args):
+
+    max=args[0]
+
+    for i in args:
+        if  i>max:
+            max=i
+    return max
+
+print(max(10, 20, 30, 40, 65, 10, 100, 9999))
+
+def sum(*args):
+    total =0
+    for i in args:
+        total+=i
+    return total
+
+print(sum(10, 20, 30 , 40))
+
+
+def student(**kwargs):
+    for key, value in kwargs.items():
+        print(f"{key}: {value}")
+
+print(student(name="Afzal", age=20, branch="AI/ML", year=2))
+
+
+def profile(*args, **kwargs):
+    print("Argument: ", args)
+    print("KWArgs:", kwargs)
+
+profile(10, 20, 30, name="Afzal", course="AI/ML")
