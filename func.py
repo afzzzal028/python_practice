@@ -192,12 +192,12 @@ def factorial(n):
     elif n==1 or n==0:
         return 1
 
-    factorial=1
+    result=1
     for i in range(1, n+1):
         result*=i
     return result
 
-print(factorial(0))
+print(factorial(5))
 
 
 #count vowels
@@ -230,3 +230,70 @@ def reverse_string(str):
         reversed_str= ch + reversed_str
     return reversed_str
 print(reverse_string("Python"))
+
+
+
+def factorial(n):
+    if n<0:
+        return "Factorial does not exists"
+    elif n==1 or n==0:
+        return 1
+
+    result=1
+    for i in range(1, n+1):
+        result*=i
+    return result
+print(factorial(5))
+
+
+def reversed_string(txt):
+    reversed_str= ""
+    for ch in txt:
+        reversed_str = ch + reversed_str
+    return reversed_str
+
+print(reverse_string("Afzal"))
+
+
+
+"""Recursion"""
+
+def coutdown(n):
+    if n==0:
+        return
+    print(n)
+    coutdown(n-1)
+
+coutdown(4)
+
+
+#factorial using recursion
+
+def factorial(n):
+    if n==0 or n==1: #base case
+        return 1
+    
+    return n*(factorial(n-1)) #recursive case
+
+print(factorial(-5))
+
+
+
+#practice
+
+def countdown(n):
+    if n==6:
+        return
+    print(n)
+    countdown(n+1)
+print(countdown(1))
+
+def sum_num(n):
+    if n ==0:
+        return
+    elif n==1:
+        return 
+
+    return n+sum_num(n-1)
+
+print(sum_num(5))
