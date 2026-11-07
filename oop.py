@@ -43,8 +43,29 @@ class Cat(Animal):
     def sound(self):
         print(self.name, "meows")
 
-d=Dog("Gold")
-c=Cat("Gracie")
-animals=[Dog(), Cat(), Animal()]
-for animal in animals:
-    animal.sound()
+# animals=[Dog(), Cat(), Animal()]
+# for animal in animals:
+#     animal.sound()
+
+
+class Student():
+    def __init__(self, marks):
+        self.__marks=marks
+
+    
+    def get_marks(self):
+        return self.__marks
+
+    #__methods can be accessed by _ClassName__method
+
+    def set_marks(self, grade):
+        if grade>0 or grade<=100:
+            self.__marks
+
+        else:
+            print("Invalid Grade")
+
+result = Student(-11)
+print(result.get_marks())
+result.set_marks(100)
+print(result.get_marks())
