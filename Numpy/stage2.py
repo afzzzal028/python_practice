@@ -63,3 +63,26 @@ new_arr = arr.reshape(2, 3)
 
 print(new_arr)
 
+"""Practice"""
+#Create an array containing numbers from 10 to 100, increasing by 10. Print the element at index 4.
+data=np.arange(10, 101, 10)
+
+print(data[4])
+
+#Given `arr = np.array([5,10,15,20,25,30,35,40])`, extract `[15,20,25,30]` using slicing.
+
+arr = np.array([5,10,15,20,25,30,35,40])
+print(arr[2:6])
+
+#Given `data = np.arange(1,13)`, reshape it into 3 rows and 4 columns.
+
+data = np.arange(1,13)
+print(data.reshape(3,4))
+
+#Given `data = np.array([[10,20,30],[40,50,60],[70,80,90]])`, extract the second column only.
+
+data = np.array([[10,20,30],
+                 [40,50,60],
+                 [70,80,90]])
+print(data[:, 1])
+
